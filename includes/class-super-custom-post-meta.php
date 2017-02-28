@@ -568,7 +568,8 @@ class Super_Custom_Post_Meta {
 					'numberposts' => -1,
 					'orderby' => 'menu_order title',
 					'order' => 'ASC',
-					'post_type' => $post_type
+					'post_type' => $post_type,
+					'suppress_filters' => FALSE
 			) )
 		);
 
