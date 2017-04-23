@@ -414,6 +414,23 @@ class Super_Custom_Post_Meta {
 
 
 	/**
+	 * Add separator to a meta box
+	 *
+	 * @uses SCPT_Markup::tag
+	 * @param array $field The field information
+	 * @param array $post_meta The post meta from the database
+	 * @param array $html_attributes HTML attributes to be passed to element
+	 * @return void
+	 * @author Luis Ruiz
+	 */
+	public function add_separator_field( $field, $post_meta, $html_attributes ) {
+		
+		echo '<p class="scpt-separator">'.$field['label'].'</p>';
+
+	}
+
+
+	/**
 	 * Add multiple checkbox fields to a meta box, all with the same name
 	 *
 	 * @uses SCPT_Markup::tag
